@@ -146,7 +146,7 @@ public class DCalculator implements ActionListener{
 		{
 			num2 = Double.parseDouble(textfield.getText());
 			
-			switch(operator)
+			switch(operator)									//For add the functionality
 			{
 				case'+':	
 					result=num1+num2;
@@ -168,7 +168,7 @@ public class DCalculator implements ActionListener{
 		{
 			textfield.setText("");
 		}
-		if(e.getSource()==delButton)			//For clear button work
+		if(e.getSource()==delButton)			//For delete button work
 		{
 			String string = textfield.getText();
 			textfield.setText("");
@@ -177,7 +177,7 @@ public class DCalculator implements ActionListener{
 				textfield.setText(textfield.getText()+string.charAt(i));
 			}
 		}
-		if(e.getSource()==negButton)			//For clear button work
+		if(e.getSource()==negButton)			//For (-) button work
 		{
 			double temp = Double.parseDouble(textfield.getText());
 			temp*=-1;
